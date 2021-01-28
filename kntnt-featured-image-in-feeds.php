@@ -3,7 +3,7 @@
 /**
  * @wordpress-plugin
  * Plugin Name:       Kntnt Featured Image in Feed
- * Plugin URI:        https://www.kntnt.com/
+ * Plugin URI:        https://github.com/Kntnt/kntnt-featured-image-in-feeds
  * Description:       Adds featured image to feeds.
  * Version:           2.0.0
  * Author:            Thomas Barregren
@@ -25,8 +25,10 @@ class Plugin {
 	}
 
 	public final function featured_image_in_feeds( $content ) {
-		global $post;
-		if ( has_post_thumbnail( $post ) ) {
+
+	       global $post;
+
+	       if ( has_post_thumbnail( $post ) ) {
 
 			/**
 			 * Filters the post thumbnail size.
@@ -53,7 +55,9 @@ class Plugin {
 				}
 			}
 		}
+
 		return $content;
+
 	}
 
 }
