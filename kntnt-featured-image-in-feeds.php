@@ -2,7 +2,7 @@
 
 /**
  * @wordpress-plugin
- * Plugin Name:       Kntnt Featured Image in Feed
+ * Plugin Name:       Kntnt Featured Image in Feeds
  * Plugin URI:        https://github.com/Kntnt/kntnt-featured-image-in-feeds
  * Description:       Adds featured image to feeds.
  * Version:           2.0.0
