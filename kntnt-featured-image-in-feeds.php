@@ -26,9 +26,9 @@ class Plugin {
 
 	public final function featured_image_in_feeds( $content ) {
 
-	       global $post;
+		global $post;
 
-	       if ( has_post_thumbnail( $post ) ) {
+		if ( has_post_thumbnail( $post ) ) {
 
 			/**
 			 * Filters the post thumbnail size.
@@ -36,7 +36,7 @@ class Plugin {
 			 * @param string|int[] $size Requested image size. Can be any registered image size name, or
 			 *                           an array of width and height values in pixels (in that order), or
 			 *                           null to prevent image to be added.
-			 * @param WP_Post $post The post.
+			 * @param \WP_Post     $post The post.
 			 */
 			$format = apply_filters( 'kntnt-featured-image-feed-image-format', 'medium_large', $post );
 
@@ -46,7 +46,7 @@ class Plugin {
 				 * Filters the post thumbnail size.
 				 *
 				 * @param string|array $attr Attributes for the image markup.
-				 * @param WP_Post $post The post.
+				 * @param \WP_Post     $post The post.
 				 */
 				$attr = apply_filters( 'kntnt-featured-image-feed-attributes', [ 'style' => 'margin-bottom:1em;' ], $post );
 
