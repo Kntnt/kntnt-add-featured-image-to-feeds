@@ -5,7 +5,7 @@
  * Plugin Name:       Kntnt Featured Image in Feeds
  * Plugin URI:        https://github.com/Kntnt/kntnt-featured-image-in-feeds
  * Description:       Adds featured image to feeds.
- * Version:           2.0.0
+ * Version:           2.0.1
  * Author:            Thomas Barregren
  * Author URI:        https://www.kntnt.com/
  * License:           GPL-3.0+
